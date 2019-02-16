@@ -1,5 +1,4 @@
-﻿using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
+﻿using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +7,16 @@ using System.Threading.Tasks;
 
 namespace WordpressAutomation
 {
-    public class Class1
+    public class LoginPage
     {
-        public void Go()
+        public static void GoTo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static object Login(string v)
         {
             var driver = new FirefoxDriver();
             driver.Navigate().GoToUrl("https://www.sogeti.com/");
-        }
     }
 }
